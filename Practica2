@@ -1,0 +1,29 @@
+using System.Timers;
+
+namespace PracticaEstructurasDeControl
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+           int N1, N2;
+
+            Console.WriteLine("A continuacion ingresa los numeros a comparar");
+            N1 = Convert.ToInt32(Console.ReadLine());
+            N2 = Convert.ToInt32(Console.ReadLine());
+
+            if (N1 > N2)
+            {
+                Console.WriteLine("El primer numero es el mayor");
+            }
+            else if (N1 < N2)
+            {
+                Console.WriteLine("El segundo numero es el mayor");
+            }
+            else if (N1 == N2)
+            {
+                Console.WriteLine("Son iguales");
+            }
+        }
+    }
+}
